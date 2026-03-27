@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BizSense Store — Business Systems</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,300;0,14..32,400;0,14..32,500;0,14..32,600;0,14..32,700;0,14..32,800;0,14..32,900;1,14..32,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <div class="nav-logo">
+        <div class="logo-mark">
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+            <rect width="28" height="28" rx="8" fill="url(#logoGrad)"/>
+            <path d="M8 14L12 10L16 14L20 10" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M8 18L12 14L16 18L20 14" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.6"/>
+            <defs>
+              <linearGradient id="logoGrad" x1="0" y1="0" x2="28" y2="28">
+                <stop offset="0%" stop-color="#6366f1"/>
+                <stop offset="100%" stop-color="#8b5cf6"/>
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+        <div class="logo-text-wrap">
+          <span class="logo-biz">BizSense</span><span class="logo-store">Store</span>
+        </div>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#apps">Apps</a></li>
+        <li><a href="#coming-soon">Coming Soon</a></li>
+        <li><a href="#why">Why BizSense</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="nav-search-btn" id="searchToggle" title="Search (Ctrl+K)">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+        </button>
+        <button class="nav-cta">Get Started</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- SEARCH OVERLAY -->
+  <div class="search-overlay" id="searchOverlay">
+    <div class="search-modal">
+      <div class="search-input-wrap">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+        <input type="text" placeholder="Search apps…" id="searchInput" autocomplete="off"/>
+        <button class="search-esc" id="searchClose">esc</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-noise"></div>
+    <div class="hero-blobs">
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+      <div class="blob blob-3"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-eyebrow">
+        <span class="live-dot"></span>
+        3 Systems. Live Now.
+      </div>
+      <h1 class="hero-title">
+        Business Software<br/>
+        <span class="hero-gradient">Redefined.</span>
+      </h1>
+      <p class="hero-body">
+        Powerful, elegant systems built for Sri Lankan businesses —
+        doing what mainstream software refuses to.
+      </p>
+      <div class="hero-btns">
+        <a href="#apps" class="hbtn-primary">Browse Apps</a>
+        <a href="#why" class="hbtn-text">
+          Learn more
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hv-card hv-card-1">
+        <div class="hvc-icon" style="background:linear-gradient(135deg,#6366f1,#8b5cf6)">📄</div>
+        <div class="hvc-text">
+          <div class="hvc-name">Zoho Statement Pro</div>
+          <div class="hvc-price">Rs. 50,000 <span>one-time</span></div>
+        </div>
+        <div class="hvc-badge live">Live</div>
+      </div>
+      <div class="hv-card hv-card-2">
+        <div class="hvc-icon" style="background:linear-gradient(135deg,#0ea5e9,#6366f1)">📱</div>
+        <div class="hvc-text">
+          <div class="hvc-name">PhoneShop POS</div>
+          <div class="hvc-price">$14.50 <span>/month</span></div>
+        </div>
+        <div class="hvc-badge live">Live</div>
+      </div>
+      <div class="hv-card hv-card-3">
+        <div class="hvc-icon" style="background:linear-gradient(135deg,#f59e0b,#ef4444)">🍸</div>
+        <div class="hvc-text">
+          <div class="hvc-name">Bar POS</div>
+          <div class="hvc-price">$14.50 <span>/month</span></div>
+        </div>
+        <div class="hvc-badge live">Live</div>
+      </div>
+      <div class="hv-mockup">
+        <div class="hvm-screen">
+          <div class="hvm-bar"><span></span><span></span><span></span></div>
+          <div class="hvm-body">
+            <div class="hvm-list">
+              <div class="hvm-row active"></div>
+              <div class="hvm-row"></div>
+              <div class="hvm-row"></div>
+            </div>
+            <div class="hvm-panel">
+              <div class="hvm-label"></div>
+              <div class="hvm-field"></div>
+              <div class="hvm-field short"></div>
+              <div class="hvm-actions">
+                <div class="hvm-btn-mock accent"></div>
+                <div class="hvm-btn-mock"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRUST BAR -->
+  <div class="trust-bar">
+    <div class="trust-inner">
+      <div class="trust-item">
+        <span class="ti-num">3</span>
+        <span class="ti-label">Live Systems</span>
+      </div>
+      <div class="trust-sep"></div>
+      <div class="trust-item">
+        <span class="ti-num">🇱🇰</span>
+        <span class="ti-label">Built for Sri Lanka</span>
+      </div>
+      <div class="trust-sep"></div>
+      <div class="trust-item">
+        <span class="ti-num">24/7</span>
+        <span class="ti-label">Support</span>
+      </div>
+      <div class="trust-sep"></div>
+      <div class="trust-item">
+        <span class="ti-num">100%</span>
+        <span class="ti-label">Customizable</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- AVAILABLE APPS -->
+  <section class="apps-section" id="apps">
+    <div class="section-wrap">
+      <div class="section-header">
+        <div class="section-chip chip-green">Available Now</div>
+        <h2 class="section-title">Live Systems</h2>
+        <p class="section-sub">Three powerful systems ready to transform your business today</p>
+      </div>
+      <div class="live-apps-grid" id="liveAppsGrid">
+        <!-- injected by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- COMING SOON -->
+  <section class="coming-section" id="coming-soon">
+    <div class="section-wrap">
+      <div class="section-header">
+        <div class="section-chip chip-amber">In Development</div>
+        <h2 class="section-title">Coming Soon</h2>
+        <p class="section-sub">More powerful systems are in active development. Be first to know.</p>
+      </div>
+      <div class="coming-grid" id="comingGrid">
+        <!-- injected by JS -->
+      </div>
+      <div class="notify-strip">
+        <div class="ns-text">
+          <strong>Get notified when new systems launch</strong>
+          <span>Join 400+ businesses on the early access list</span>
+        </div>
+        <div class="ns-form">
+          <input type="email" placeholder="your@email.com" class="ns-input" />
+          <button class="ns-btn">Notify Me</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY BIZSENSE -->
+  <section class="why-section" id="why">
+    <div class="section-wrap">
+      <div class="section-header">
+        <div class="section-chip chip-purple">Why BizSense</div>
+        <h2 class="section-title">Software that does more.</h2>
+        <p class="section-sub">We build what mainstream software refuses to — designed for how Sri Lankan businesses actually work.</p>
+      </div>
+      <div class="why-grid">
+        <div class="why-card">
+          <div class="wc-icon">🎯</div>
+          <h3>Zero Compromises</h3>
+          <p>Every feature you need, nothing you don't. No locked features. No unnecessary paywalls.</p>
+        </div>
+        <div class="why-card">
+          <div class="wc-icon">⚡</div>
+          <h3>Built Different</h3>
+          <p>Features that Zoho, SAP and generic systems refuse to build. We go where others won't.</p>
+        </div>
+        <div class="why-card">
+          <div class="wc-icon">🇱🇰</div>
+          <h3>Local First</h3>
+          <p>Designed around Sri Lankan business practices, taxes, suppliers, and workflows from day one.</p>
+        </div>
+        <div class="why-card">
+          <div class="wc-icon">🔒</div>
+          <h3>Your Data, Your Rules</h3>
+          <p>Full data ownership, export anything, integrate anywhere. You're never locked in.</p>
+        </div>
+        <div class="why-card">
+          <div class="wc-icon">🤝</div>
+          <h3>Real Support</h3>
+          <p>Talk to the actual developers — not a bot, not a tier-1 helpdesk. Real answers, fast.</p>
+        </div>
+        <div class="why-card">
+          <div class="wc-icon">🔄</div>
+          <h3>Always Improving</h3>
+          <p>Your feedback shapes the roadmap. Features are added based on what real businesses need.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact-section" id="contact">
+    <div class="section-wrap contact-inner">
+      <div class="contact-left">
+        <div class="section-chip chip-purple">Get in Touch</div>
+        <h2 class="section-title" style="text-align:left">Let's talk.</h2>
+        <p class="section-sub" style="text-align:left">Have questions? Want a demo? Need something custom? We're based in Sri Lanka and respond fast.</p>
+        <div class="contact-links">
+          <a href="https://wa.me/94XXXXXXXXX" class="contact-link whatsapp">
+            <span class="cl-icon">💬</span>
+            <div><div class="cl-name">WhatsApp Us</div><div class="cl-val">Available 9am – 9pm</div></div>
+          </a>
+          <a href="mailto:hello@bizsense.lk" class="contact-link email">
+            <span class="cl-icon">✉️</span>
+            <div><div class="cl-name">Email</div><div class="cl-val">hello@bizsense.lk</div></div>
+          </a>
+        </div>
+      </div>
+      <form class="contact-form" onsubmit="handleForm(event)">
+        <div class="cf-row">
+          <div class="cf-field">
+            <label>Your Name</label>
+            <input type="text" placeholder="Kamal Perera" />
+          </div>
+          <div class="cf-field">
+            <label>Email</label>
+            <input type="email" placeholder="kamal@shop.lk" />
+          </div>
+        </div>
+        <div class="cf-field">
+          <label>I'm interested in…</label>
+          <select>
+            <option>Zoho Statement Pro</option>
+            <option>PhoneShop POS</option>
+            <option>Bar POS</option>
+            <option>Multiple Systems</option>
+            <option>Custom Development</option>
+          </select>
+        </div>
+        <div class="cf-field">
+          <label>Message</label>
+          <textarea placeholder="Tell us about your business and what you need…" rows="4"></textarea>
+        </div>
+        <button type="submit" class="cf-submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- APP DETAIL MODAL -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal" id="appModal">
+      <button class="modal-close" id="modalClose" aria-label="Close">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 6 6 18M6 6l12 12"/></svg>
+      </button>
+      <div id="modalInner"></div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="nav-logo" style="margin-bottom:12px">
+          <div class="logo-mark">
+            <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+              <rect width="28" height="28" rx="8" fill="url(#logoGrad2)"/>
+              <path d="M8 14L12 10L16 14L20 10" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M8 18L12 14L16 18L20 14" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.6"/>
+              <defs>
+                <linearGradient id="logoGrad2" x1="0" y1="0" x2="28" y2="28">
+                  <stop offset="0%" stop-color="#6366f1"/>
+                  <stop offset="100%" stop-color="#8b5cf6"/>
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
+          <div class="logo-text-wrap">
+            <span class="logo-biz">BizSense</span><span class="logo-store">Store</span>
+          </div>
+        </div>
+        <p>Powerful business systems built for Sri Lankan businesses. Doing what mainstream software can't.</p>
+      </div>
+      <div class="footer-cols">
+        <div class="fc">
+          <div class="fc-title">Apps</div>
+          <a href="#" onclick="openApp('zoho')">Zoho Statement Pro</a>
+          <a href="#" onclick="openApp('phone')">PhoneShop POS</a>
+          <a href="#" onclick="openApp('bar')">Bar POS</a>
+        </div>
+        <div class="fc">
+          <div class="fc-title">Company</div>
+          <a href="#why">Why BizSense</a>
+          <a href="#contact">Contact</a>
+          <a href="#coming-soon">Roadmap</a>
+        </div>
+        <div class="fc">
+          <div class="fc-title">Support</div>
+          <a href="#">Documentation</a>
+          <a href="#">WhatsApp Support</a>
+          <a href="#">System Status</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 BizSense. All rights reserved.</span>
+      <span>Privacy · Terms · Cookies</span>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
